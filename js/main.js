@@ -207,7 +207,7 @@
         }
       }
       ctx.beginPath();
-      ctx.fillStyle = "rgba(0, 150, 96, 0.55)";
+      ctx.fillStyle = "rgba(170, 255, 220, 0.7)";
       ctx.arc(mote.x, mote.y, mote.r, 0, Math.PI * 2);
       ctx.fill();
     }
@@ -222,7 +222,7 @@
         for (let j = i + 1; j < near.length; j += 1) {
           const d = Math.hypot(near[i].x - near[j].x, near[i].y - near[j].y);
           if (d < 110) {
-            ctx.strokeStyle = "rgba(0, 150, 96," + ((1 - d / 110) * 0.4) + ")";
+            ctx.strokeStyle = "rgba(90, 255, 190," + ((1 - d / 110) * 0.4) + ")";
             ctx.beginPath();
             ctx.moveTo(near[i].x, near[i].y);
             ctx.lineTo(near[j].x, near[j].y);
@@ -243,7 +243,7 @@
         continue;
       }
       ctx.beginPath();
-      ctx.fillStyle = "rgba(0, 168, 106," + spark.life + ")";
+      ctx.fillStyle = "rgba(210, 255, 235," + spark.life + ")";
       ctx.arc(spark.x, spark.y, spark.r * spark.life, 0, Math.PI * 2);
       ctx.fill();
     }
