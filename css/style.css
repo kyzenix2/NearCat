@@ -168,7 +168,7 @@ body.cursor-hot .cursor-ring {
   height: 40px;
   border-radius: 12px;
   object-fit: cover;
-  object-position: center 28%;
+  object-position: center;
   box-shadow: 0 0 0 1px var(--line), 0 8px 18px rgba(0, 168, 106, 0.22);
 }
 .nav-links {
